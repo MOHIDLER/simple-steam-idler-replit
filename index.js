@@ -13,7 +13,7 @@ var status = 1;  // 1 - online, 7 - invisible
 user = new steamUser();
 user.logOn({"accountName": username, "password": password,
 user.on('loggedOn', () => {
-	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on');
+	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on')
 	user.setPersona(status);               
 	user.gamesPlayed(games);
 });
@@ -30,7 +30,7 @@ var status2 = 1;  // 1 - online, 7 - invisible
 user2 = new steamUser();
 user2.logOn({"accountName": username2, "password": password2, 
 user2.on('loggedOn', () => {
-	if (user2.steamID != null) console.log(user2.steamID + ' - Successfully logged on');
+	if (user2.steamID != null) console.log(user2.steamID + ' - Successfully logged on')
 	user2.setPersona(status2);               
 	user2.gamesPlayed(games2);
 });
